@@ -1,0 +1,18 @@
+// plugins {
+//     id "net.java.openjdk.shinyafox.jshell.gradle.plugin" version "1.0.4"
+// }
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'io.github.espresso4j', name: 'espresso', version: '0.2.0-SNAPSHOT'
+    compile group: 'io.github.espresso4j', name: 'jettino', version: '0.1.0-SNAPSHOT'
+}
+
+mainClassName = "io.github.espresso4j.example.App"
