@@ -1,4 +1,4 @@
-# espresso
+# espresso-examples
 
 [![Travis (.org)](https://img.shields.io/travis/espresso4j/espresso-examples.svg)](https://travis-ci.org/espresso4j/espresso-examples)
 ![GitHub](https://img.shields.io/github/license/espresso4j/espresso-examples.svg)
