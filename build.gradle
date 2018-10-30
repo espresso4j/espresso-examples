@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    compile group: 'io.github.espresso4j', name: 'espresso', version: '0.2.0-SNAPSHOT'
+    compile group: 'io.github.espresso4j', name: 'espresso', version: '0.2.0'
     compile group: 'io.github.espresso4j', name: 'jettino', version: '0.1.0-SNAPSHOT'
     compile group: 'io.github.espresso4j', name: 'latte', version: '0.1.0-SNAPSHOT'
 }
