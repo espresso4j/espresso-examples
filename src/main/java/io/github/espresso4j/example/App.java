@@ -15,7 +15,7 @@ public class App {
                 .body(String.format("<h1>It works</h1><p>%s</p>", req)))
             .on("/user/:name", (req) -> Response.of(200)
                 .header("Content-Type", "text/plain")
-                .body(String.format("Hello, %s", Latte.getExtension(req).get("name"))))
+                .body(String.format("Hello, %s", Latte.extension(req).get("name"))))
             .buildSync();
 
         ja.start(latte);
