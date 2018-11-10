@@ -11,13 +11,13 @@ public class App {
         JettinoAdapter ja = new JettinoAdapter();
 
         Espresso latte = Latte.by(Espresso.class)
-            .on("/", (req) -> Response.of(200)
+            .on(Request.Method.GET, "/", (req) -> Response.of(200)
                 .header("Content-Type", "text/html")
                 .body(String.format("<h1>It works</h1><p>%s</p>", req)))
-            .on("/user/:name", (req) -> Response.of(200)
+            .on(Request.Method.GET, "/user/:name", (req) -> Response.of(200)
                 .header("Content-Type", "text/plain")
                 .body(String.format("Hello, %s", Latte.extension(req).get("name"))))
-            .on("/user/:name/update", (req) -> Response.of(200)
+            .on(Request.Method.POST, "/user/:name/update", (req) -> Response.of(200)
                 .header("Content-Type", "text/plain")
                 .body(String.format("Updating user %s to age %s",
                                     Latte.extension(req).get("name"),
