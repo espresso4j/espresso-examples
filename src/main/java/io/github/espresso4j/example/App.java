@@ -3,12 +3,12 @@ package io.github.espresso4j.example;
 import io.github.espresso4j.espresso.*;
 import io.github.espresso4j.latte.Latte;
 import io.github.espresso4j.sugar.Sugar;
-import io.github.espresso4j.jettino.JettinoAdapter;
+import io.github.espresso4j.jettino.Jettino;
 
 public class App {
 
     public static void main(String[] args) throws Exception {
-        JettinoAdapter ja = new JettinoAdapter();
+        Jettino ja = new Jettino();
 
         Espresso latte = Latte.by(Espresso.class)
             .on(Request.Method.GET, "/", (req) -> Response.of(200)
